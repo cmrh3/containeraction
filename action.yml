@@ -1,5 +1,8 @@
 name: "Memory Output Lab"
 description: "Outputs the container memory"
+outputs:
+  myOutput:
+    description: "Total Memory"
 runs:
   using: 'docker'
   image: 'Dockerfile'

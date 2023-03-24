@@ -7,4 +7,9 @@ jobs:
     name: Memory Output
     steps:
       - uses: actions/checkout@v3 
-      - uses: ./
+      - name: run the action
+        id: memory_output
+        uses: ./
+      - name: output the memory
+        run: |
+          echo ${{ steps.memory_outputs.memory }}
