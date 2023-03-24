@@ -1,0 +1,9 @@
+name: ACL Lab
+on: push
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Echo Container Memory"
+        run: echo "Hello World"
