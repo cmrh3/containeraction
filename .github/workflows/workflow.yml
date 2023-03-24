@@ -4,7 +4,7 @@ on: push
 jobs:
   lab:
     runs-on: ubuntu-latest
+    name: Memory Output
     steps:
       - uses: actions/checkout@v3 
-      - name: "Echo Container Memory"
-        run: /bin/bash entrypoint.sh
+      - uses: ./
