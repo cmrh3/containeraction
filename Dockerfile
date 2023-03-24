@@ -8,4 +8,4 @@ RUN pwd
 
 RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/bin/bash entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
