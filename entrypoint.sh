@@ -1,3 +1,7 @@
 #!/bin/sh -l
 
-free -hm
+echo "Hello $INPUT_MYINPUT"
+
+memory=$(cat /proc/meminfo)
+
+echo "::set-output name=memory::$memory"
