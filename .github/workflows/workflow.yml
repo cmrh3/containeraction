@@ -12,4 +12,4 @@ jobs:
         uses: ./
       - name: output the memory
         run: |
-          echo ${{ steps.memory_outputs.memory }}
+          echo ${{ steps.memory_output.outputs.memory }}
